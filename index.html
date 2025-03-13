@@ -46,7 +46,6 @@
 					</div>
 					<div class="terminal-text">Authenticating with public key "jebrnzl@local-machine"</div>
 				</div>
-				<div class="terminal-text">Last login: <span id="timestamp"></span> from 192.168.56.101</div>
 				<div class="terminal-text">jebrnzl@dev ~ $ tree</div>
 				<div class="tree">
 					<div class="tree-item">├── <a href="mailto:jbrnzl@gmail.com">email</a></div>
@@ -58,14 +57,5 @@
 			</main>
 		</div>
 	</div>
-
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			const timestampElement = document.getElementById("timestamp");
-			const now = new Date().toISOString();
-			const formattedTime = now.slice(0, 19).replace("T", " ");
-			timestampElement.textContent = formattedTime;
-		});
-	  </script>
 </body>
 </html>
