@@ -1,0 +1,85 @@
+:root {
+    font-size: 1rem;
+  }
+
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  a {
+    color: #4ea6f7; /* Cyan Blue */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+
+  a:hover {
+    color: #64b5f6; /* Lighter Sky Blue on hover */
+    text-decoration: underline;
+  }
+
+  body {
+    font-family: "Courier Prime", monospace;
+    font-optical-sizing: auto;
+    line-height: 1.4;
+
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    color: #a9a9b3;
+    background: #232425;
+    display: flex;
+    flex-direction: column;;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  header {
+    display: flex;
+    background: #1b1c1d;
+    padding: 20px;
+    width: 100%;
+
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+
+    padding: 1em 1em;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .terminal-line {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .cursor-line::after {
+    content: "█";
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
