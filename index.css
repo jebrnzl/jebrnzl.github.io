@@ -72,13 +72,6 @@ body {
 }
 
 @media (prefers-color-scheme: light) {
-    body {
-        color: var(--light-color);
-        background: var(--light-color-bg);
-    }
-}
-
-@media (prefers-color-scheme: light) {
     header {
         color: var(--light-header-color)
     }
